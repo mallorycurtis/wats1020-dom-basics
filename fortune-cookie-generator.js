@@ -25,6 +25,11 @@ var generateFortuneCookie = function() {
     // `fortunesList` variable. (HINT: You will use `Math.floor()` and
     // `Math.random()` to accomplish this.) Use this data to update the
     // `innerText` of the `#fortune-cookie-text` element.
+var random = Math.floor((Math.random() * 51) + 1); //Pick a random nuber between 1 and 51
+document.getElementById("fortune-cookie-text").innerHTML = fortunesList[random]; //set the inner HTML of fortune cookie text equl to the random fortune
+var list = document.createElement("li");//create li item
+document.getElementById("fortune-cookie-text").innerHTML = document.getElementById("li").innerHTML; //set li item equal to the text from the fortune
+document.getElementById("previous-fortunes-container").appendChild(list); //add the li item to the previous fortunes container
 
 }
 
